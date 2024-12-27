@@ -1,0 +1,22 @@
+import java.util.*;
+public class Main 
+{
+	public static void main(String[] args) {
+	    Scanner scan=new Scanner(System.in);
+	    String str=scan.nextLine();
+	    String palindrom=str;
+	    String strrev="";
+	    for(int i=str.length()-1;i>=0;i--){
+	        System.out.println("str"+i+":"+str.charAt(i));
+	        strrev=strrev+str.charAt(i);
+	    }
+	    System.out.println(strrev);
+	   
+	    if(strrev.equals(palindrom)){
+	        System.out.println("palindrome");
+	    }else{
+	        System.out.println("No palindrome");
+	    }
+	
+	}
+}
