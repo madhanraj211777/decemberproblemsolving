@@ -1,0 +1,23 @@
+import java.util.*;
+
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner scan=new Scanner(System.in);
+		System.out.println("enter the string convert into uppercase so enter the string in lower case similar to character:");
+		String str=scan.nextLine();
+		String strr=str;
+		System.out.println("Enter the character:");
+		char chr=scan.next().charAt(0);
+		char ch2=chr;
+		String str2="";
+		System.out.println(str.toUpperCase());
+		System.out.println(Character.toUpperCase(chr));
+		for(int i=0;i<strr.length();i++){
+		    str2=str2+(char)(strr.charAt(i)-32);
+		}
+		System.out.println(str2);
+		System.out.println((char)(ch2-32));
+		
+	}
+}
